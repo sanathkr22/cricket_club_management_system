@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G.O.A.T Cricket Club</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('images/background.jpg');
+            background-size: cover;
+            background-color: #ffeb3b; /* Vibrant background color */
+            color: #333; /* Dark text color */
+        }
+
+        header {
+            background: linear-gradient(to right, #ff6f00, #f4511e); /* Gradient background */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .banner {
+            background-image: url('images/background.jpg'); /* Path to your banner image */
+            background-size: cover;
+            text-align: center;
+            padding: 100px 0; /* Adjust as needed */
+        }
+
+        h1 {
+            font-size: 48px;
+            margin: 0;
+            color: #fff; /* White text color */
+        }
+
+        nav {
+            text-align: right;
+            margin-top: -40px; /* Adjust as needed */
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin-left: 10px;
+            border-radius: 5px;
+            background-color: #e9440c;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: #fff; /* White background */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #333; /* Darker shade for headings */
+            background-color: #e0a1a1; /* Lighter shade for background */
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #191717; /* Light gray text color */
+        }
+
+        /* Achievements Section Styles */
+        .achievements {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .achievement-item {
+            width: calc(33.33% - 20px);
+            background-color: #f5f5f5; /* Lighter shade for background */
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            position: relative;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .achievement-item:hover {
+            background-color: #e0e0e0; /* Light gray background on hover */
+        }
+
+        .achievement-name {
+            color: #333; /* Dark text color */
+            font-weight: bold;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+        .achievement-description {
+            color: #666; /* Light gray text color */
+            text-align: center;
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff; /* White background */
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .achievement-item:hover .achievement-description {
+            display: block; /* Show description on hover */
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .banner {
+                padding: 50px 0; /* Adjust for smaller screens */
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            nav ul li a {
+                padding: 8px 16px;
+            }
+
+            .achievements {
+                flex-wrap: wrap;
+            }
+
+            .achievement-item {
+                width: calc(50% - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <h1>G.O.A.T Cricket Club</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <section>
+            <h2>About Us</h2>
+            <p>Welcome to the G.O.A.T Cricket Club, where passion meets performance on the cricket field! As a premier cricketing destination, we're committed to nurturing talent, promoting sportsmanship, and celebrating the thrill of the game. Whether you're a seasoned veteran or just starting your cricket journey, our club provides top-notch coaching, state-of-the-art facilities, and a vibrant community of fellow enthusiasts. Come join us and discover the joy of cricket at G.O.A.T Cricket Club!.</p>
+        </section>
+
+        <!-- Achievements Section -->
+        <h2>Achievements</h2>
+        <div class="achievements">
+            <div class="achievement-item">
+                <div class="achievement-name">Most Runs</div>
+                <div class="achievement-description">Sanath: 1500 runs</div>
+            </div>
+            <div class="achievement-item">
+                <div class="achievement-name">Most Wickets</div>
+                <div class="achievement-description">Samrudhh: 75 wickets</div>
+            </div>
+            <div class="achievement-item">
+                <div class="achievement-name">best batsmam</div>
+                <div class="achievement-description">punith: 100 centuries</div>
+            </div>
+            <div class="achievement-item">
+                <div class="achievement-name">Best Club of the Year - 2023</div>
+                <div class="achievement-description">Awarded by International Cricket Council</div>
+            </div>
+        </div>
+
+        <section>
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:goat@gmail.com">goat@gmail.com</a></p>
+        </section>
+    </div>
+</body>
+</html>

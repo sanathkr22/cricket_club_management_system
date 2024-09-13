@@ -1,0 +1,100 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ffafbd, #ffc3a0); /* Gradient background */
+    color: #333;
+}
+
+.container {
+    max-width: 500px; /* Increased max-width */
+    margin: 50px auto;
+    padding: 30px; /* Increased padding */
+    background: #fff;
+    border-radius: 15px; /* Increased border radius */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Increased box shadow */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px; /* Increased margin */
+    font-size: 28px; /* Increased font size */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px; /* Increased margin */
+    font-size: 18px; /* Increased font size */
+}
+
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 15px; /* Increased padding */
+    margin-bottom: 15px; /* Increased margin */
+    border: 2px solid #ccc; /* Increased border thickness */
+    border-radius: 8px; /* Increased border radius */
+    box-sizing: border-box;
+    font-size: 16px; /* Increased font size */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added box shadow */
+}
+
+input[type="email"] {
+    background-color: #f9f9f9; /* New background color */
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px; /* Increased font size */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added box shadow */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.admin-link {
+    text-align: center;
+    margin-top: 20px; /* Increased margin */
+    font-size: 16px; /* Increased font size */
+}
+
+.admin-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form action="login.php" method="post">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <a href="clear">Forget-password</a>
+            <button type="submit">Login</button>
+        </form>
+        <div class="admin-link">
+            <a href="admin.php">Admin Login</a>
+        </div>
+    </div>
+</body>
+</html>
